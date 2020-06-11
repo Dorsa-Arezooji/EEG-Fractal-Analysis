@@ -3,21 +3,31 @@ A MATLAB script for fractal analysis and visualization of EEG signals
 
 * Electrode Count: 18 (not counting the reference electrode)
 * Electrode Locations: Fp1, Fp2, F3, F4, F7, F8, Fz, C3, C4, Cz, T3, T4, T5, T6, P3, P4, Pz, O1, O2 (Cz: reference electrode)
-**_The channel location matrix is availible [Channel_loc.mat](https://github.com/Dorsa-Arezooji/EEG-Fractal-Analysis/blob/master/Channel_loc.mat)_**
 * Electrode Formation: 10-20 (international system)
+**_The channel location matrix is availible [Channel_loc.mat](https://github.com/Dorsa-Arezooji/EEG-Fractal-Analysis/blob/master/Channel_loc.mat)_**
 
 ## Application
 * 
+## How to Use
+1. Save each subject's EEG recordings in a matrix named "EEG" then save it as a .mat file named "N.mat" (N={1, 2, .., subj_count}) in the working directory.
+2. Set the subject count (subj_count) in "fractal_dim.m".
+3. Run "fractal_dim.m" and select 1 for Katz FD (fractal dimension) 2 for Higuchi FD or 3 for Fractional Brownian Motion when prompted.
+4. If you are comparing two groups of subjects, create a separate folder for each one, containing the EEG recordings of all of that group's subjects, and copy "fractal_dim.m" in each folder and run it.
+5. Name the resulting matrices as "RESULTS_G1" and "RESULTS_G2" and save them as "RESULTS_GROUP1.mat" and "RESULTS_GROUP2.mat" respectively.
+6. Set the number of channels in "statistical_results.m" and run.
+7. Save the results matrix as "RESULTS.mat".
+8. Copy "Channels_loc.mat" to the working directory and run "topoplot_results.m".
+
 ## Data
-Each subject's EEG recordings is saved in a matrix: [c, e, t]
-* c: channels (default:18)
+Each subject's EEG recordings matrix: [c, e, t]
+* c: number of channels
 * e: epoc trains (points in time)
-* t: trials
+* t: number of trials
 
 ## EEG Preprocessing
 Bandpass FIR filters:
 1. delta band (1-4Hz)
-2.theta band (4-8Hz)
+2. theta band (4-8Hz)
 3. alpha I band (8-10Hz)
 4. alpha II band (10-12Hz)
 5. alpha band (8-13Hz)
@@ -28,8 +38,6 @@ Bandpass FIR filters:
 10. beta band (13-30Hz)
 11. gamma band (30-40Hz)
 12. all frequency bands
-    
-m
 
 ## Fractal Dimensions
 
