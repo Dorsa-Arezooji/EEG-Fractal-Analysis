@@ -9,32 +9,35 @@ A MATLAB script for fractal analysis and visualization of EEG signals
 ## Application
 * 
 ## Data
+Each subject's EEG recordings is saved in a matrix: [c, e, t]
+* c: channels (default:18)
+* e: epoc trains (points in time)
+* t: trials
 
 ## EEG Preprocessing
 Bandpass FIR filters:
-
-    1. delta band (1-4Hz)
-    2.theta band (4-8Hz)
-    3. alpha I band (8-10Hz)
-    4. alpha II band (10-12Hz)
-    5. alpha band (8-13Hz)
-    6. beta I band (12-15Hz)
-    7. beta II band (15-18Hz)
-    8. beta III band (18-25Hz)
-    9. beta IV band (25-30Hz)
-    10. beta band (13-30Hz)
-    11. gamma band (30-40Hz)
-    12. all frequency bands
+1. delta band (1-4Hz)
+2.theta band (4-8Hz)
+3. alpha I band (8-10Hz)
+4. alpha II band (10-12Hz)
+5. alpha band (8-13Hz)
+6. beta I band (12-15Hz)
+7. beta II band (15-18Hz)
+8. beta III band (18-25Hz)
+9. beta IV band (25-30Hz)
+10. beta band (13-30Hz)
+11. gamma band (30-40Hz)
+12. all frequency bands
     
 m
 
 ## Fractal Dimensions
 
-### Katz
+* **Katz**
 
-### Higuchi
+* **Higuchi**
 
-### Fractional Brownian Motion (Hurst parameter)
+* **Fractional Brownian Motion (Hurst parameter)**
 
 ## Box Plots
 
