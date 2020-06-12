@@ -1,5 +1,6 @@
 %% EEG Fractal Analysis
 % https://github.com/Dorsa-Arezooji/EEG-Fractal-Analysis
+% Jan 2019
 
 % HOW TO USE:
 % 1. Save each subject's EEG recordings in a matrix named "EEG" then save it as a .mat
