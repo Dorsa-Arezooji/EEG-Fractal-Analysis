@@ -27,7 +27,7 @@ A MATLAB code for fractal analysis and visualization of EEG signals
    Electrode Formation: 10-20 (international system)
    ```
 
-## How it Works:
+## How it Works
 Each subject's EEG recording is bandpass filtered into the following frequency bands:
   ```
   1. delta band (1-4Hz)
