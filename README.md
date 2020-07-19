@@ -46,4 +46,4 @@ Each subject's EEG recording is bandpass filtered into the following frequency b
 Then, depending on the chosen method (Katz, Higuchi, Fractional Brownian Motion), the fractal dimension for each channel will be calculated in each frequncy band for each subject.
 Next, the results from a t-test, comparing the results from the two groups, is used for the topoplots.
 
-![katz FD](https://github.com/Dorsa-Arezooji/EEG-Fractal-Analysis/blob/master/images/Katz.png)
+<img src="images/Katz.png">
